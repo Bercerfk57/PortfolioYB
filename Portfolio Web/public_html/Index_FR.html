@@ -1,0 +1,1457 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Commencez votre développement avec la page de destination JohnDoe."
+    />
+    <meta name="author" content="Devcrud" />
+    <title>Portfolio YB FR</title>
+    <!-- icônes de police -->
+    <link
+      rel="stylesheet"
+      href="assets/vendors/themify-icons/css/themify-icons.css"
+    />
+    <!--- Leaflet  -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+
+    <!--Postmark-->
+
+    <dependency>
+      <groupId>com.postmarkapp</groupId>
+      <artifactId>postmark</artifactId>
+      <version>{version}</version>
+    </dependency>
+
+    <!--- Leaflet  -->
+
+    <link
+      href="assets\vendors/fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/fontawesome.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets\vendors/fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/brands.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets\vendors/fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/solid.css"
+      rel="stylesheet"
+    />
+    <!-- Styles principaux Bootstrap + JohnDoe -->
+    <link rel="stylesheet" href="assets/css/johndoe.css" />
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <a
+      href="Index_EN.html"
+      class="btn-primary btn-component"
+      data-spy="affix"
+      data-offset-top="600"
+      ><i class="ti-shift-left-alt"></i> English</a
+    >
+    <header class="header">
+      <div class="container">
+        <ul class="social-icons pt-3">
+          <li class="social-item">
+            <a class="social-link text-light" href="#"
+              ><i class="ti-facebook" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="social-item">
+            <a class="social-link text-light" href="#"
+              ><i class="ti-twitter" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="social-item">
+            <a class="social-link text-light" href="#"
+              ><i class="ti-google" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="social-item">
+            <a class="social-link text-light" href="#"
+              ><i class="ti-instagram" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="social-item">
+            <a class="social-link text-light" href="#"
+              ><i class="ti-github" aria-hidden="true"></i
+            ></a>
+          </li>
+        </ul>
+        <div class="header-content">
+          <h4 class="header-subtitle">Bonjour, je suis</h4>
+          <h1 class="header-title">Ylan B-D</h1>
+          <h6 class="header-mono">Ingénieur | Développeur</h6>
+          <button class="btn btn-primary btn-rounded">
+            <a href="./assets/CV_FR.pdf" title="Pdf"></a>Imprimer le CV
+          </button>
+        </div>
+      </div>
+    </header>
+    <nav
+      class="navbar sticky-top navbar-expand-lg navbar-light bg-white"
+      data-spy="affix"
+      data-offset-top="510"
+    >
+      <div class="container">
+        <button
+          class="navbar-toggler ml-auto"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse mt-sm-20 navbar-collapse"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">À propos</a>
+            </li>
+            <li class="nav-item">
+              <a href="#resume" class="nav-link">CV</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav brand">
+            <img src="assets/imgs/avatar.jpg" alt="" class="brand-img" />
+            <li class="brand-txt">
+              <h5 class="brand-title">Ylan Benelhadjsaid - Dutrieux</h5>
+              <div class="brand-subtitle">Ingénieur | Développeur</div>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#portfolio" class="nav-link">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Projets</a>
+            </li>
+            <li class="nav-item last-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div id="about" class="row about-section">
+        <div class="col-lg-4 about-card">
+          <h3 class="font-weight-light">Qui suis-je ?</h3>
+          <span class="line mb-5"></span>
+          <p class="mb-3">
+            Je suis un étudiant ingénieur en dernière année à l'Ecole Nationale
+            Supérieure des Arts et Métiers (ENSAM) à Aix-en-Provence (France),
+            avec une forte passion pour la programmation, la modélisation
+            industrielle et l'électronique embarquée.
+          </p>
+          <p class="mt-20">
+            Je suis actuellement à la recherche d'un stage en informatique, où
+            je peux développer mes compétences et contribuer à des projets
+            innovants en électronique.
+          </p>
+          <button class="btn btn-outline-danger" id="download_CV">
+            <i class="icon-down-circled2"></i>Télécharger mon CV
+          </button>
+        </div>
+        <div class="col-lg-4 about-card">
+          <h3 class="font-weight-light">Infos personnelles</h3>
+          <span class="line mb-5"></span>
+          <ul class="mt40 info list-unstyled">
+            <li><span>Date de naissance</span> : 10 avril 2003</li>
+            <li><span>Email</span> : ylan13180@gmail.com</li>
+            <li><span>Téléphone</span> : +33 (0)7 66 56 07 50</li>
+            <li><span>Adresse</span> : 19 Rue du Ricm 13100 Aix-en-Provence</li>
+          </ul>
+          <ul class="social-icons pt-3">
+            <li class="social-item">
+              <a
+                class="social-link"
+                href="https://www.linkedin.com/in/ylan-benelhadjsaid-dutrieux-4294a2273/"
+                ><i class="ti-linkedin" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 about-card">
+          <h3 class="font-weight-light">Mon Expertise</h3>
+          <span class="line mb-5"></span>
+          <div class="row">
+            <div class="col-1 text-danger pt-1">
+              <i class="fa-solid fa-gears fa-2xl" style="color: #f85c70"></i>
+            </div>
+            <div class="col-10 ml-auto mr-3">
+              <h6>Ingénieur</h6>
+              <p class="subtitle">
+                Concevoir et mettre en œuvre des solutions pratiques.
+              </p>
+              <hr />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1 text-danger pt-1">
+              <i class="fa-solid fa-code fa-2xl" style="color: #f85c70"></i>
+            </div>
+            <div class="col-10 ml-auto mr-3">
+              <h6>Développement Web</h6>
+              <p class="subtitle">
+                Créer des sites web intuitifs et fonctionnels.
+              </p>
+              <hr />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1 text-danger pt-1">
+              <i
+                class="fa-solid fa-microchip fa-2xl"
+                style="color: #f85c70"
+              ></i>
+            </div>
+            <div class="col-10 ml-auto mr-3">
+              <h6>Programmation informatique</h6>
+              <p class="subtitle">
+                Développer du code pour résoudre des défis complexes.
+              </p>
+              <hr />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1 text-danger pt-1">
+              <i
+                class="fa-solid fa-pen-ruler fa-2xl"
+                style="color: #f85c70"
+              ></i>
+            </div>
+            <div class="col-10 ml-auto mr-3">
+              <h6>Modélisation industrielle CAO</h6>
+              <p class="subtitle">
+                Simuler et optimiser les processus industriels.
+              </p>
+              <hr />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Section CV-->
+    <section class="section" id="resume">
+      <div class="container">
+        <h2 class="mb-5"><span class="text-danger">Mon</span> CV</h2>
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                <div class="mt-2">
+                  <h4>Éducation</h4>
+                  <span class="line"></span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h6 class="title text-danger">Présent - 2025</h6>
+                <p class="word-break: keep-all;">
+                  <a
+                    href="https://artsetmetiers.fr/fr/master-science-cyber-physical-systems-engineering-cpse"
+                    >Master en Ingénierie des Systèmes Cyber-Physiques (CPSE),
+                    Ecole Nationale Supérieur des Arts et Métiers</a
+                  >
+                  - Aix-en-Provence
+                </p>
+                <p class="subtitle">
+                  En dernière année en tant qu'étudiant ingénieur, je poursuis
+                  un Master en Ingénierie des Systèmes Cyber-Physiques (CPSE).
+                </p>
+                <hr />
+                <h6 class="title text-danger">2022 - Présent</h6>
+                <p>
+                  <a href="https://artsetmetiers.fr/fr"
+                    >Études d'ingénieur à l'Ecole Nationale Supérieur des Arts
+                    et Métiers</a
+                  >
+                  - Aix-en-Provence
+                </p>
+                <p class="subtitle">
+                  Au cours de mes deux premières années d'études d'ingénieur
+                  dans l'une des meilleures écoles d'ingénieurs de France, j'ai
+                  approfondi mes connaissances et compétences en ingénierie, et
+                  j'ai réussi le programme général aux Arts et Métiers.
+                </p>
+                <hr />
+                <h6 class="title text-danger">2020 - 2022</h6>
+                <p>
+                  <a href="https://ptsimarseille.fr"
+                    >Prépa PTSI/PT* au Lycée JEAN-PERRIN</a
+                  >
+                  - Marseille
+                </p>
+                <p class="subtitle">
+                  Durant ma première année en classe préparatoire aux écoles
+                  d'ingénieurs (Prépa Technologie et Sciences de l'Ingénieur -
+                  PTSI), je me suis concentré sur les sciences de base en
+                  ingénierie. Lors de ma deuxième année (Prépa Technologie
+                  Étoile - PT*), je me suis préparé intensivement aux concours
+                  pour intégrer les grandes écoles d'ingénieurs françaises.
+                </p>
+                <hr />
+                <h6 class="title text-danger">2019 - 2020</h6>
+                <p>Terminale au Lycée JEAN-PERRIN - Marseille</p>
+                <p class="subtitle">
+                  En terminale, je me suis spécialisé en Sciences de l'Ingénieur
+                  (Terminale SI) et j'ai obtenu mon Baccalauréat Scientifique
+                  (S) avec une spécialisation en Mathématiques. Ce programme m'a
+                  fourni une solide base en ingénierie et en principes
+                  mathématiques, renforçant ainsi mes compétences en résolution
+                  de problèmes et en pensée analytique.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                <div class="mt-2">
+                  <h4>Stages</h4>
+                  <span class="line"></span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h6 class="title text-danger">Juillet - Septembre 2024</h6>
+                <p>
+                  Stage chez <a href="https://fr.4d.com">4D Logiciel</a> -
+                  Rabat, Maroc
+                </p>
+                <p class="subtitle">
+                  Durant l'été 2023, j'ai effectué un stage de 9 semaines chez
+                  4D Logiciel pour valider ma mobilité internationale, où j'ai
+                  développé une place de marché pour modules en utilisant React
+                  et TypeScript pour leur site Qodly. Qodly est une plateforme
+                  qui facilite le développement d'applications par la
+                  programmation visuelle, permettant aux utilisateurs
+                  d'assembler des blocs au lieu d'écrire du code.
+                </p>
+                <hr />
+                <h6 class="title text-danger">Août 2023</h6>
+                <p>
+                  Stage chez <a href="https://fr.4d.com">Irem</a> - Berre,
+                  France
+                </p>
+                <p class="subtitle">
+                  J'ai effectué un stage de 4 semaines chez IREM en tant que
+                  stagiaire (stage ouvrier), où j'ai principalement développé
+                  des logiciels de traitement de données et de gestion de bases
+                  de données. J'ai largement utilisé Python pour ces tâches.
+                </p>
+                <hr />
+                <h6 class="title text-danger">2019</h6>
+                <p>
+                  Stage chez
+                  <a href="https://www.cd-concept.com">CD-concept</a> -
+                  Carnoux-En-Provence 13470
+                </p>
+                <p class="subtitle">
+                  J'ai réalisé un stage chez CD-Concept, où j'étais responsable
+                  de l'installation du logiciel de gestion de projet PROGEST sur
+                  des tablettes et postes de travail pour le CHU de Grenoble.
+                </p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <div class="pull-left">
+                  <h4 class="mt-2">Langues</h4>
+                  <span class="line"></span>
+                </div>
+              </div>
+              <div class="card-body pb-2">
+                <h6>Français</h6>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    style="width: 100%"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <h6>Anglais</h6>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    style="width: 75%"
+                    aria-valuenow="25"
+                    aria-valueFin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                <div class="pull-left">
+                  <h4 class="mt-2">Langages de programmation</h4>
+                  <span class="line"></span>
+                </div>
+              </div>
+              <div class="card-body pb-2">
+                <h6>Python</h6>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    style="width: 95%"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <h6>Carduino</h6>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    style="width: 60%"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <h6>C++</h6>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    style="width: 20%"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <h6>HTML &amp; CSS</h6>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    style="width: 80%"
+                    aria-valuenow="50"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <h6>PHP</h6>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    style="width: 50%"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <h6>TypeScript</h6>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    style="width: 80%"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <h6>React (avec TypeScript)</h6>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    style="width: 80%"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <h6>JavaScript</h6>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    style="width: 40%"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <h6>Matlab</h6>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    style="width: 20%"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <div class="pull-left">
+                  <h4 class="mt-2">Logiciels de CAO</h4>
+                  <span class="line"></span>
+                </div>
+              </div>
+              <div class="card-body pb-2">
+                <h6>4D exp</h6>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    style="width: 90%"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <h6>Solidworks</h6>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    style="width: 85%"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <h6>Catia</h6>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    style="width: 70%"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <h6>Autodesk</h6>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    style="width: 60%"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <h6>Fusion 360</h6>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    style="width: 50%"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <h6>SolidEdges</h6>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    style="width: 50%"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="service">
+      <div class="container">
+        <h2 class="mb-5 pb-4"><span class="text-danger">Mes</span> Services</h2>
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <div class="card mb-5">
+              <div class="card-header has-icon">
+                <i class="ti-vector text-danger" aria-hidden="true"></i>
+              </div>
+              <div class="card-body px-4 py-3">
+                <h5 class="mb-3 card-title text-dark">Ullam</h5>
+                <p class="subtitle">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ullam commodi provident, dolores reiciendis enim pariatur
+                  error optio, tempora ex, nihil nesciunt! In praesentium sunt
+                  commodi, unde ipsam ex veritatis laboriosam dolor asperiores
+                  suscipit blanditiis, dignissimos quos nesciunt nulla aperiam
+                  officia.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="card mb-5">
+              <div class="card-header has-icon">
+                <i class="ti-write text-danger" aria-hidden="true"></i>
+              </div>
+              <div class="card-body px-4 py-3">
+                <h5 class="mb-3 card-title text-dark">Asperiores</h5>
+                <p class="subtitle">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ullam commodi provident, dolores reiciendis enim pariatur
+                  error optio, tempora ex, nihil nesciunt! In praesentium sunt
+                  commodi, unde ipsam ex veritatis laboriosam dolor asperiores
+                  suscipit blanditiis, dignissimos quos nesciunt nulla aperiam
+                  officia.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="card mb-5">
+              <div class="card-header has-icon">
+                <i class="ti-package text-danger" aria-hidden="true"></i>
+              </div>
+              <div class="card-body px-4 py-3">
+                <h5 class="mb-3 card-title text-dark">Tempora</h5>
+                <p class="subtitle">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ullam commodi provident, dolores reiciendis enim pariatur
+                  error optio, tempora ex, nihil nesciunt! In praesentium sunt
+                  commodi, unde ipsam ex veritatis laboriosam dolor asperiores
+                  suscipit blanditiis, dignissimos quos nesciunt nulla aperiam
+                  officia.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="card mb-5">
+              <div class="card-header has-icon">
+                <i class="ti-map-alt text-danger" aria-hidden="true"></i>
+              </div>
+              <div class="card-body px-4 py-3">
+                <h5 class="mb-3 card-title text-dark">Provident</h5>
+                <p class="subtitle">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ullam commodi provident, dolores reiciendis enim pariatur
+                  error optio, tempora ex, nihil nesciunt! In praesentium sunt
+                  commodi, unde ipsam ex veritatis laboriosam dolor asperiores
+                  suscipit blanditiis, dignissimos quos nesciunt nulla aperiam
+                  officia.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="card mb-5">
+              <div class="card-header has-icon">
+                <i class="ti-bar-chart text-danger" aria-hidden="true"></i>
+              </div>
+              <div class="card-body px-4 py-3">
+                <h5 class="mb-3 card-title text-dark">Consectetur</h5>
+                <p class="subtitle">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ullam commodi provident, dolores reiciendis enim pariatur
+                  error optio, tempora ex, nihil nesciunt! In praesentium sunt
+                  commodi, unde ipsam ex veritatis laboriosam dolor asperiores
+                  suscipit blanditiis, dignissimos quos nesciunt nulla aperiam
+                  officia.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="card mb-5">
+              <div class="card-header has-icon">
+                <i class="ti-support text-danger" aria-hidden="true"></i>
+              </div>
+              <div class="card-body px-4 py-3">
+                <h5 class="mb-3 card-title text-dark">Veritatis</h5>
+                <p class="subtitle">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ullam commodi provident, dolores reiciendis enim pariatur
+                  error optio, tempora ex, nihil nesciunt! In praesentium sunt
+                  commodi, unde ipsam ex veritatis laboriosam dolor asperiores
+                  suscipit blanditiis, dignissimos quos nesciunt nulla aperiam
+                  officia.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section bg-dark py-5">
+      <div class="container text-center">
+        <h2 class="text-light mb-5 font-weight-normal">
+          Je suis disponible pour des missions Freelance
+        </h2>
+        <a href="#contact" class="btn bg-primary w-lg">Engagez-moi</a>
+      </div>
+    </section>
+
+    <!-- Section Portfolio -->
+    <section class="section bg-custom-gray" id="portfolio">
+      <div class="container">
+        <h1 class="mb-5"><span class="text-danger">Mon</span> Portfolio</h1>
+        <div class="portfolio">
+          <div class="filters">
+            <a href="#" data-filter=".new" class="active"> Nouveau </a>
+            <a href="#" data-filter=".web"> Dev Web </a>
+            <a href="#" data-filter=".software"> Logiciel </a>
+            <a href="#" data-filter=".elec"> Électronique embarquée </a>
+            <a href="#" data-filter=".CAO"> CAO </a>
+          </div>
+          <div id="ItemParent"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Fin de la section portfolio -->
+
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="mb-5">Mes <span class="text-danger">Projets</span></h2>
+        <div class="row">
+          <div class="blog-card" id="qodly">
+            <div class="img-holder">
+              <img
+                src="assets/imgs/Qodly.jpg"
+                alt="Site de marché pour Qodly"
+              />
+            </div>
+            <div class="content-holder" id="qodly">
+              <h6 class="title">Marché pour Qodly</h6>
+
+              <p class="post-details">
+                <a class="text-primary">Technologies utilisées :</a>
+                <a class="">TypeScript</a>
+                <a class="">React</a>
+                <a class="">tRPC</a>
+                <a class="">MongoDB</a>
+                <a class="">TailwindCSS</a>
+                <a class="">VSCode</a>
+              </p>
+
+              <p>
+                Pour réaliser ma mobilité internationale de deux mois de mon
+                cursus d'ingénierie, j'ai effectué un stage au Maroc chez 4
+                Logiciel, l'entreprise derrière Qodly, un logiciel de
+                programmation par blocs. Pendant ce stage, j'ai développé un
+                site de marketplace pour gérer les modules et plugins pour
+                Qodly.
+              </p>
+
+              <p>
+                <b
+                  >À travers ce projet, j'ai appris à programmer en TypeScript
+                  et utilisé React avec Vite pour concevoir le front-end. J'ai
+                  également utilisé le framework Express combiné à tRPC pour
+                  développer l'API back-end. Pour la base de données, j'ai
+                  travaillé avec MongoDB.</b
+                >
+              </p>
+              <p>
+                J'ai beaucoup apprécié ce projet car il m'a permis de m'immerger
+                totalement dans une entreprise de développement logiciel et
+                d'acquérir une compréhension approfondie de la création et de la
+                conception de sites web. J'ai découvert un nouveau langage,
+                TypeScript, et j'ai renforcé mes compétences en React. J'ai
+                également beaucoup appris sur la gestion des requêtes entre le
+                front-end et le back-end.
+              </p>
+            </div>
+          </div>
+          <!-- fin de la carte de blog -->
+
+          <!-- blog-card -->
+          <div class="blog-card" id="borne">
+            <div class="img-holder">
+              <img
+                src="assets/imgs/Borne.jpg"
+                alt="Station de recharge de cartes cashless"
+              />
+            </div>
+            <div class="content-holder">
+              <h6 class="title">Station de recharge de carte sans contact</h6>
+
+              <p class="post-details">
+                <a class="text-primary">Technologies utilisées :</a>
+                <a class="">Python</a>
+                <a class="">Raspberry Pi</a>
+                <a class="">tKinter</a>
+                <a class="">phpMyAdmin</a>
+                <a class="">Lydia API</a>
+                <a class="">GitHub</a>
+                <a class="">périphériques d'entrée</a>
+              </p>
+
+              <p>
+                Dans le cadre d'une compétition de projets étudiants à mon
+                école, Arts et Métiers, nous avons eu l'idée de concevoir une
+                station automatique de recharge de cartes CASH-LESS pour nos
+                galas. Ces événements, qui attirent généralement plus de 5000
+                participants, rencontrent souvent des problèmes de congestion
+                aux comptoirs de recharge. Cette solution permettrait de
+                recharger rapidement les cartes en utilisant Lydia.
+              </p>
+
+              <p>
+                <b
+                  >Pour y parvenir, nous avons utilisé un Raspberry Pi 4 avec
+                  des périphériques d'entrée, comprenant un scanner de code QR,
+                  un pavé numérique et un lecteur de cartes RFID. Nous avons
+                  développé une application logicielle en Python en utilisant la
+                  bibliothèque Tkinter pour l'interface graphique, ainsi que la
+                  communication avec la base de données via phpMyAdmin pour
+                  enregistrer les montants des paiements sur les cartes. L'API
+                  de Lydia a été utilisée pour traiter les transactions.</b
+                >
+              </p>
+              <p>
+                <b
+                  >Cette station a finalement été testée lors d'un gala,
+                  générant 6000 € sur les 40000 € de revenus totaux de
+                  l'événement.</b
+                >
+              </p>
+              <p>
+                L'équipe du projet était composée de 6 membres : 3 se sont
+                concentrés sur la conception et la construction de la station,
+                et 3 autres, y compris moi-même, ont travaillé sur le logiciel
+                et l'électronique. Nous avons collaboré sur le code en utilisant
+                GitHub pour faciliter le travail en équipe.
+              </p>
+            </div>
+          </div>
+          <!-- fin de la carte de blog -->
+
+          <!-- blog-card -->
+          <div class="blog-card" id="site">
+            <div class="img-holder">
+              <img src="assets/imgs/Site.jpg" alt="Ce site" />
+            </div>
+            <div class="content-holder">
+              <h4 class="title">Ce site</h4>
+
+              <p class="post-details">
+                <a class="text-primary">Technologies utilisées :</a>
+                <a class="">HTML</a>
+                <a class="">JavaScript</a>
+              </p>
+
+              <p>
+                En rédigeant mon CV, j'ai été déçu de ne pas pouvoir inclure
+                certains de mes projets ou détails importants en raison du
+                manque de place. J'ai donc eu l'idée de créer ce site pour
+                présenter tous mes projets, permettant ainsi aux recruteurs de
+                comprendre pleinement mon travail.
+              </p>
+
+              <p>
+                <b
+                  >J'ai développé ce site en utilisant HTML et JavaScript, en
+                  partant d'un modèle que j'ai personnalisé pour répondre à mes
+                  besoins. Le site intègre plusieurs outils, dont le framework
+                  Bootstrap pour le design et l'API Leaflet, une alternative
+                  gratuite à Google Maps, qui alimente la carte en bas de
+                  page.</b
+                >
+              </p>
+              <p>
+                Je prévois d'améliorer le site au fur et à mesure que j'acquiers
+                plus de connaissances et de compétences.
+              </p>
+            </div>
+          </div>
+          <!-- fin de la carte de blog -->
+          <!-- blog-card -->
+          <div class="blog-card" id="vote">
+            <div class="img-holder">
+              <img src="assets/imgs/vote.jpg" alt="Machine à voter" />
+            </div>
+            <div class="content-holder">
+              <h4 class="title">Une machine à voter</h4>
+
+              <p class="post-details">
+                <a class="text-primary">Technologies utilisées :</a>
+                <a class="">Python</a>
+                <a class="">tKinter</a>
+                <a class="">Raspberry Pi</a>
+                <a class="">Dispositifs d'écrans</a>
+              </p>
+              <p>
+                En tant que membre du club informatique de l'école Arts et
+                Métiers, j'ai été chargé de concevoir une machine à voter pour
+                permettre à toute la promotion de participer à des décisions
+                importantes, telles que l'élection des membres de clubs clés
+                comme le conseil des étudiants (BDE). Mon objectif était de
+                créer une solution conviviale qui pourrait être facilement
+                utilisée par les futures promotions.
+              </p>
+
+              <p>
+                <b
+                  >Pour ce projet, j'ai utilisé un Raspberry Pi 4 équipé de deux
+                  écrans tactiles : un pour les électeurs et un autre pour le
+                  contrôle des votes. Le logiciel a été développé en Python en
+                  utilisant la bibliothèque Tkinter pour créer une interface
+                  utilisateur accessible. Pour simplifier la configuration,
+                  comme la gestion de la liste des électeurs, la base de données
+                  a été gérée dans Excel.</b
+                >
+              </p>
+              <p>
+                Ce projet a été réalisé en collaboration avec un autre étudiant
+                qui était responsable de la construction du support de la
+                machine.
+              </p>
+            </div>
+          </div>
+          <!-- fin de la carte de blog -->
+
+          <!-- blog-card -->
+          <div class="blog-card" id="kavita">
+            <div class="img-holder">
+              <img
+                src="assets/imgs/blog1.jpg"
+                alt="Lecteur de livres Kavita Intranet"
+              />
+            </div>
+            <div class="content-holder">
+              <h4 class="title">Un lecteur de livres sur Intranet Kavita</h4>
+
+              <p class="post-details">
+                <a class="text-primary">Technologies utilisées :</a>
+                <a class="">Proxmox</a>
+                <a class="">Kavita</a>
+                <a class="">Linux</a>
+                <a class="">Synology</a>
+              </p>
+              <p>
+                En tant que membre du club informatique des Arts et Métiers, le
+                président du club bibliothèque m'a demandé de mettre en place un
+                site de lecture sur Intranet au sein du réseau de la résidence.
+              </p>
+
+              <p>
+                <b
+                  >Pour ce faire, j'ai créé une machine virtuelle (VM) Debian et
+                  installé Kavita, un logiciel de gestion de bibliothèque
+                  numérique open source. J'ai ensuite connecté la VM à un
+                  dossier partagé sur notre NAS Synology pour stocker et gérer
+                  notre bibliothèque en ligne de livres.</b
+                >
+              </p>
+            </div>
+          </div>
+          <!-- fin de la carte de blog -->
+          <!-- blog-card -->
+          <div class="blog-card" id="rent">
+            <div class="img-holder">
+              <img
+                src="assets/imgs/Rent.jpg"
+                alt="Site de location de voitures"
+              />
+            </div>
+            <div class="content-holder">
+              <h4 class="title">Site de location de voitures</h4>
+
+              <p class="post-details">
+                <a class="text-primary">Technologies utilisées :</a>
+                <a class="">HTML</a>
+                <a class="">PHP</a>
+                <a class="">PHPmyAdmin</a>
+                <a class="">OVH</a>
+                <a class="">GitHub</a>
+              </p>
+
+              <p>
+                Lors d'une autre compétition étudiante aux Arts et Métiers, nous
+                avons eu l'idée de développer un site de location de voitures
+                pour un client souhaitant entrer sur ce marché.
+              </p>
+
+              <p>
+                <b
+                  >Pour réaliser ce projet, nous avons principalement utilisé
+                  HTML et PHP pour le front-end. La base de données a été
+                  configurée en utilisant PhpMyAdmin, et le site a été hébergé
+                  sur OVH.</b
+                >
+              </p>
+              <p>
+                Ce projet a été réalisé par une équipe de six étudiants, y
+                compris moi-même. J'étais principalement responsable de la
+                section portail client. Pour collaborer sur le code, nous avons
+                utilisé GitHub.
+              </p>
+            </div>
+          </div>
+          <!-- fin de la carte de blog -->
+          <!-- blog-card -->
+          <div class="blog-card">
+            <div class="img-holder">
+              <img
+                src="assets/imgs/Rezal.png"
+                alt="Membre du club informatique Arts et Métiers Rezal"
+              />
+            </div>
+            <div class="content-holder">
+              <h4 class="title">
+                Membre du club informatique Arts et Métiers Rezal
+              </h4>
+
+              <p class="post-details">
+                <a class="text-primary">Technologies utilisées :</a>
+                <a class="">Proxmox</a>
+                <a class="">Pfsense</a>
+                <a class="">PHPmyAdmin</a>
+                <a class="">Serveur intranet</a>
+                <a class="">Synology</a>
+                <a class="">Ubiquiti</a>
+              </p>
+
+              <p>
+                En tant que comptable et gestionnaire de fonds du club
+                informatique, j'ai assumé diverses responsabilités qui ont
+                contribué à la vie sociale de l'école. Mon rôle principal était
+                de maintenir l'infrastructure réseau de la résidence étudiante,
+                assurant un accès Internet stable pour tous les résidents. J'ai
+                géré les serveurs de la résidence, administré des outils tels
+                que le pare-feu Pfsense et le NAS Synology, et maintenu des
+                points d'accès Ubiquiti pour optimiser la couverture réseau.
+              </p>
+
+              <p>
+                <b
+                  >J'ai également participé à la gestion des systèmes intranet,
+                  notamment Proxmox pour la gestion des machines virtuelles, qui
+                  hébergeait des services tels que Plex, un système de streaming
+                  interne ainsi qu'un NAS sous Synology. De plus, j'ai maintenu
+                  le système de paiement de la cafétéria, développé par
+                  d'anciens étudiants, qui utilisait PhpMyAdmin pour la base de
+                  données et des terminaux de paiement construits sur Raspberry
+                  Pi.</b
+                >
+              </p>
+
+              <p>
+                <b
+                  >Un autre aspect important de mes responsabilités était la
+                  mise en place et la gestion du système de paiement pour les
+                  galas de l'école, qui accueillaient jusqu'à 5000 personnes et
+                  géraient des transactions atteignant 40 K€.</b
+                >
+              </p>
+
+              <p>
+                En plus de ces tâches de maintenance, j'ai contribué à plusieurs
+                projets, tels que le terminal automatique lié au système de
+                paiement du gala, une machine à voter, et la mise en place de
+                Kavita.
+              </p>
+            </div>
+          </div>
+          <!-- fin de la carte de blog -->
+          <!-- blog-card -->
+          <div class="blog-card">
+            <div class="img-holder">
+              <img
+                src="assets/imgs/em.jpg"
+                alt="Membre du club musique Arts et Métiers Em'ss"
+              />
+            </div>
+            <div class="content-holder">
+              <h4 class="title">
+                Membre du club musique Arts et Métiers Em'ss
+              </h4>
+
+              <p class="post-details">
+                <a class="text-primary">Technologies utilisées :</a>
+                <a class="">Proxmox</a>
+                <a class="">Pfsense</a>
+                <a class="">PHPmyAdmin</a>
+                <a class="">Serveur intranet</a>
+                <a class="">Synology</a>
+                <a class="">Ubiquiti</a>
+              </p>
+
+              <p>
+                En plus de l'informatique, de la CAO et de l'électronique
+                embarquée, j'ai une autre passion : la musique. J'étais membre
+                du club de musique des Arts et Métiers, où j'ai servi
+                d'ingénieur du son lors des galas.
+              </p>
+
+              <p>
+                <b
+                  >Le rôle d'un membre du club de musique inclut la mise en
+                  place des scènes musicales, que ce soit pour des jams dans la
+                  cafétéria de la résidence étudiante ou une grande scène lors
+                  de nos galas. En tant qu'ingénieur du son, j'ajustais le son
+                  en utilisant une console de mixage Soundcraft Si Expression 3,
+                  à la fois pendant les balances et les concerts en
+                  direct.</b
+                >
+              </p>
+
+              <p>
+                J'ai également joué sur scène plusieurs fois en tant que
+                guitariste et bassiste. Maintenant que je ne fais plus partie du
+                club, j'espère former un groupe avec des amis.
+              </p>
+            </div>
+          </div>
+          <!-- fin de la carte de blog -->
+          <!-- blog-card -->
+          <div class="blog-card" id="reveil">
+            <div class="img-holder">
+              <img src="assets/imgs/Reveil.png" alt="Réveil optimisé" />
+            </div>
+            <div class="content-holder">
+              <h4 class="title">Réveil optimisé</h4>
+
+              <p class="post-details">
+                <a class="text-primary">Technologies utilisées :</a>
+                <a class="">Python</a>
+                <a class="">Carduino</a>
+                <a class="">PySerial</a>
+                <a class="">dispositifs d'entrée multiples</a>
+              </p>
+              <p>
+                Pour mon projet de fin d'année en classe préparatoire au Lycée
+                Jean-Perrin, qui devait se concentrer sur la santé et la
+                prévention, je me suis associé à un autre étudiant pour explorer
+                le sujet de l'optimisation du sommeil et du réveil. Nous avons
+                conçu un prototype de réveil optimisé qui réveille une personne
+                pendant sa phase de sommeil léger, rendant ainsi le réveil plus
+                facile.
+              </p>
+
+              <p>
+                <b
+                  >Pour construire ce réveil, j'ai utilisé une carte Arduino
+                  Uno, ainsi que divers composants tels qu'un écran LCD, un
+                  joystick et un accéléromètre pour analyser les mouvements du
+                  dormeur pendant la nuit. J'ai également expérimenté avec un
+                  capteur de fréquence cardiaque, mais j'ai finalement décidé de
+                  ne pas l'utiliser en raison de son manque de précision. La
+                  carte Arduino a été programmée en Arduino C pour envoyer des
+                  données via un port série. Simultanément, un programme Python,
+                  utilisant la bibliothèque PySerial, a récupéré ces données,
+                  les a traitées et a renvoyé l'heure de réveil optimale à la
+                  carte Arduino.</b
+                >
+              </p>
+            </div>
+          </div>
+          <!-- fin de la carte de blog -->
+          <!-- blog-card -->
+          <div class="blog-card" id="irem">
+            <div class="img-holder">
+              <img
+                src="assets/imgs/blog1.jpg"
+                alt="Logiciel de comptabilité et de devis"
+              />
+            </div>
+            <div class="content-holder">
+              <h4 class="title">Logiciel de comptabilité et de devis</h4>
+
+              <p class="post-details">
+                <a class="text-primary">Technologies utilisées :</a>
+                <a class="">Python</a>
+                <a class="">tKinter</a>
+              </p>
+
+              <p>
+                Pendant mon stage chez IREM, une entreprise spécialisée dans la
+                soudure et l'installation de tuyauterie dans des usines
+                pétrochimiques comme Total, j'ai eu l'opportunité de développer
+                plusieurs logiciels d'aide pour les devis et les tarifications.
+              </p>
+
+              <p>
+                Le premier logiciel que j'ai développé, basé sur les graphiques
+                de charge des grues LIEBHERR, aidait à déterminer la grue la
+                plus rentable à utiliser en fonction de facteurs tels que la
+                hauteur de levage, le poids du tuyau et le coût de location.
+                J'ai ensuite créé un site web en utilisant d'autres graphiques
+                normatifs, qui attribue une note de dangerosité à un tuyau en
+                fonction de sa taille, de la nature dangereuse du liquide qu'il
+                transporte, de la pression, et d'autres critères. Enfin, j'ai
+                développé un troisième logiciel qui, à l'aide de données Excel,
+                optimise l'identification des tests de soudure obligatoires.
+              </p>
+
+              <p>
+                <b
+                  >Pour tous ces projets logiciels, j'ai principalement utilisé
+                  Python avec la bibliothèque Tkinter.</b
+                >
+              </p>
+            </div>
+          </div>
+          <!-- fin de la carte de blog -->
+          <!-- blog-card -->
+          <div class="blog-card" id="valise">
+            <div class="img-holder">
+              <img src="assets/imgs/blog1.jpg" alt="Valise intelligente" />
+            </div>
+            <div class="content-holder">
+              <h4 class="title">Valise intelligente suivie</h4>
+
+              <p class="post-details">
+                <a class="text-primary">Technologies utilisées :</a>
+                <a class="">Carduino</a>
+                <a class="">Capteur Bluetooth</a>
+              </p>
+              <p>
+                Pour notre projet de fin d'année au lycée, axé sur la santé et
+                l'assistance, nous avons décidé de concevoir une valise
+                télécommandée qui suivrait son utilisateur en suivant le signal
+                Bluetooth de son téléphone grâce à la triangulation.
+              </p>
+
+              <p>
+                <b>
+                  Pour y parvenir, nous avons utilisé une carte Arduino
+                  connectée à un shield initialement conçu pour Raspberry Pi et
+                  alimentée par une batterie. Le système était équipé d'un
+                  capteur Bluetooth pour détecter la position de l'utilisateur
+                  et de balises pour la triangulation de la position afin de
+                  suivre l'utilisateur.</b
+                >
+              </p>
+
+              <p>
+                Ce projet a attiré l'attention de notre professeur, qui nous a
+                inscrits à un concours de projet de fin d'année.
+                Malheureusement, nous n'avons pas pu participer au concours en
+                raison de la pandémie de Covid-19.
+              </p>
+            </div>
+          </div>
+          <!-- fin de la carte de blog -->
+          <!-- blog-card -->
+          <div class="blog-card" id="cao">
+            <div class="img-holder">
+              <img
+                src="assets/imgs/CAO/CAO.png"
+                alt="Quelques conceptions en SolidWorks"
+              />
+            </div>
+            <div class="content-holder">
+              <h4 class="title">Quelques conceptions en SolidWorks</h4>
+
+              <p class="post-details">
+                <a class="text-primary">Technologies utilisées :</a>
+                <a class="">Soldiworks</a>
+              </p>
+
+              <p>
+                Ayant appris à concevoir des modèles 3D dans SolidWorks au
+                lycée, j'ai développé une passion pour la création de divers
+                modèles 3D. Je crée souvent des épées inspirées de la culture
+                pop, ainsi que des conceptions que j'ai entièrement
+                conceptualisées moi-même.
+              </p>
+            </div>
+          </div>
+          <!-- fin de la carte de blog -->
+        </div>
+      </div>
+    </section>
+
+    <div class="section contact" id="contact">
+      <div id="map" class="map"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="contact-form-card">
+              <h4 class="contact-title">Envoyer un message</h4>
+              <form action="">
+                <div class="form-group">
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Nom *"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    class="form-control"
+                    type="email"
+                    placeholder="Email *"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <textarea
+                    class="form-control"
+                    id=""
+                    placeholder="Message"
+                    rows="7"
+                    required
+                  ></textarea>
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="form-control btn btn-primary">
+                    Envoyer le message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="contact-info-card">
+              <h4 class="contact-title">Entrer en contact</h4>
+              <div class="row mb-2">
+                <div class="col-1 pt-1 mr-1">
+                  <i class="ti-mobile icon-md"></i>
+                </div>
+                <div class="col-10">
+                  <h6 class="d-inline">
+                    Téléphone : <br />
+                    <span class="text-muted">+ (33) 766560750</span>
+                  </h6>
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-1 pt-1 mr-1">
+                  <i class="ti-map-alt icon-md"></i>
+                </div>
+                <div class="col-10">
+                  <h6 class="d-inline">
+                    Adresse :<br />
+                    <span class="text-muted"
+                      >19 Rue du Ricm 13100 Aix-en-Provence</span
+                    >
+                  </h6>
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-1 pt-1 mr-1">
+                  <i class="ti-envelope icon-md"></i>
+                </div>
+                <div class="col-10">
+                  <h6 class="d-inline">
+                    Email :<br />
+                    <span class="text-muted">ylan13180@gmail.com</span>
+                  </h6>
+                </div>
+              </div>
+              <ul class="social-icons pt-4">
+                <li class="social-item">
+                  <a class="social-link text-light" href="#"
+                    ><i class="ti-facebook" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link text-light" href="#"
+                    ><i class="ti-twitter" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link text-light" href="#"
+                    ><i class="ti-google" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link text-light" href="#"
+                    ><i class="ti-instagram" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link text-light" href="#"
+                    ><i class="ti-github" aria-hidden="true"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer py-3">
+      <div class="container">
+        <p class="small mb-0 text-light">
+          &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          Créé avec <i class="ti-heart text-danger"></i> par
+          <a href="http://devcrud.com" target="_blank"
+            ><span
+              class="text-danger"
+              title="Thèmes et tableaux de bord Bootstrap 4"
+              >DevCRUD</span
+            ></a
+          >
+          et modifié par
+          <a href="#home"
+            ><span
+              class="text-danger"
+              title="Thèmes et tableaux de bord Bootstrap 4"
+              >Ylan Benelhadjsaid-Dutrieux</span
+            ></a
+          >
+        </p>
+      </div>
+    </footer>
+    <!-- noyau  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- affix bootstrap 3 -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Isotope  -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+
+    <!-- Leaflet -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+
+    <!-- JohnDoe js -->
+    <script src="assets/js/johndoe.js"></script>
+  </body>
+</html>

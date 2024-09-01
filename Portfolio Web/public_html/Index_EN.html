@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Start your development with JohnDoe landing page."
+    />
+    <meta name="author" content="Devcrud" />
+    <title>YB Portfolio EN</title>
+    <!-- font icons -->
+    <link
+      rel="stylesheet"
+      href="assets/vendors/themify-icons/css/themify-icons.css"
+    />
+    <!--- Leaflet  -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+
+    <!--- Leaflet  -->
+
+    <link
+      href="assets\vendors/fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/fontawesome.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets\vendors/fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/brands.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets\vendors/fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/solid.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap + JohnDoe main styles -->
+    <link rel="stylesheet" href="assets/css/johndoe.css" />
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <a
+      href="Index_FR.html"
+      class="btn-primary btn-component"
+      data-spy="affix"
+      data-offset-top="600"
+      ><i class="ti-shift-left-alt"></i> Français</a
+    >
+    <header class="header">
+      <div class="container">
+        <ul class="social-icons pt-3">
+          <li class="social-item">
+            <a class="social-link text-light" href="#"
+              ><i class="ti-facebook" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="social-item">
+            <a class="social-link text-light" href="#"
+              ><i class="ti-twitter" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="social-item">
+            <a class="social-link text-light" href="#"
+              ><i class="ti-google" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="social-item">
+            <a class="social-link text-light" href="#"
+              ><i class="ti-instagram" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="social-item">
+            <a class="social-link text-light" href="#"
+              ><i class="ti-github" aria-hidden="true"></i
+            ></a>
+          </li>
+        </ul>
+        <div class="header-content">
+          <h4 class="header-subtitle">Hello, I am</h4>
+          <h1 class="header-title">Ylan B-D</h1>
+          <h6 class="header-mono">Ingenineer | Developer</h6>
+          <button class="btn btn-primary btn-rounded">
+            <a href="./assets/CV_EN.pdf" title="Pdf"></a>Print Resume
+          </button>
+        </div>
+      </div>
+    </header>
+    <nav
+      class="navbar sticky-top navbar-expand-lg navbar-light bg-white"
+      data-spy="affix"
+      data-offset-top="510"
+    >
+      <div class="container">
+        <button
+          class="navbar-toggler ml-auto"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse mt-sm-20 navbar-collapse"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#resume" class="nav-link">Resume</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav brand">
+            <img src="assets/imgs/avatar.jpg" alt="" class="brand-img" />
+            <li class="brand-txt">
+              <h5 class="brand-title">Ylan Benelhadjsaid - Dutrieux</h5>
+              <div class="brand-subtitle">Ingineer | Developer</div>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#portfolio" class="nav-link">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item last-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div id="about" class="row about-section">
+        <div class="col-lg-4 about-card">
+          <h3 class="font-weight-light">Who am I ?</h3>
+          <span class="line mb-5"></span>
+          <p class="mb-3">
+            I am an engineer student in my final year at the Ecole Nationale
+            Supérieure des Arts et Métiers (ENSAM) in Aix-en-Provence (France),
+            with a strong pssion for programming, industrial modeling and
+            embedded electronics.
+          </p>
+          <p class="mt-20">
+            I am currently, seeking an internship in computer science, where I
+            can further develop my skills and contribute to innovative projects
+            electronics.
+          </p>
+          <button class="btn btn-outline-danger" id="download_CV">
+            <i class="icon-down-circled2"></i>Download My CV
+          </button>
+        </div>
+        <div class="col-lg-4 about-card">
+          <h3 class="font-weight-light">Personal Info</h3>
+          <span class="line mb-5"></span>
+          <ul class="mt40 info list-unstyled">
+            <li><span>Birthdate</span> : April 10, 2003</li>
+            <li><span>Email</span> : ylan13180@gmail.com</li>
+            <li><span>Phone</span> : +33 (0)7 66 56 07 50</li>
+            <li><span>Address</span> : 19 Rue du Ricm 13100 Aix-en-Provence</li>
+          </ul>
+          <ul class="social-icons pt-3">
+            <li class="social-item">
+              <a
+                class="social-link"
+                href="https://www.linkedin.com/in/ylan-benelhadjsaid-dutrieux-4294a2273/"
+                ><i class="ti-linkedin" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 about-card">
+          <h3 class="font-weight-light">My Expertise</h3>
+          <span class="line mb-5"></span>
+          <div class="row">
+            <div class="col-1 text-danger pt-1">
+              <i class="fa-solid fa-gears fa-2xl" style="color: #f85c70"></i>
+            </div>
+            <div class="col-10 ml-auto mr-3">
+              <h6>Engineer</h6>
+              <p class="subtitle">
+                Designing and implementing practical solutions.
+              </p>
+              <hr />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1 text-danger pt-1">
+              <i class="fa-solid fa-code fa-2xl" style="color: #f85c70"></i>
+            </div>
+            <div class="col-10 ml-auto mr-3">
+              <h6>Web Development</h6>
+              <p class="subtitle">
+                Creating intuitive and functional websites.
+              </p>
+              <hr />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1 text-danger pt-1">
+              <i
+                class="fa-solid fa-microchip fa-2xl"
+                style="color: #f85c70"
+              ></i>
+            </div>
+            <div class="col-10 ml-auto mr-3">
+              <h6>Computer Programming</h6>
+              <p class="subtitle">
+                Developing code to solve complex challenges.
+              </p>
+              <hr />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1 text-danger pt-1">
+              <i
+                class="fa-solid fa-pen-ruler fa-2xl"
+                style="color: #f85c70"
+              ></i>
+            </div>
+            <div class="col-10 ml-auto mr-3">
+              <h6>Industrial modeling</h6>
+              <p class="subtitle">
+                Simulating and optimizing industrial processes.
+              </p>
+              <hr />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Resume Section-->
+    <section class="section" id="resume">
+      <div class="container">
+        <h2 class="mb-5"><span class="text-danger">My</span> Resume</h2>
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                <div class="mt-2">
+                  <h4>Education</h4>
+                  <span class="line"></span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h6 class="title text-danger">Present - 2025</h6>
+                <p class="word-break: keep-all;">
+                  <a
+                    href="https://artsetmetiers.fr/fr/master-science-cyber-physical-systems-engineering-cpse"
+                    >Master’s in Cyber-Physical Systems Engineering (CPSE),
+                    Ecole Nationale Supérieur des Arts et Métie</a
+                  >
+                  - Aix-en-Provence
+                </p>
+                <p class="subtitle">
+                  In my final year as an engineering sutdent, I am pursuing a
+                  Master of Science in Cyber-Physical Systems Engineering
+                  (CPSE), focusing on advanced topics in this cutting-edge
+                  field.
+                </p>
+                <hr />
+                <h6 class="title text-danger">2022 - Present</h6>
+                <p>
+                  <a href="https://artsetmetiers.fr/fr"
+                    >Engineering sutdies at Ecole Nationale Supérieur des Arts
+                    et Métiers</a
+                  >
+                  - Aix-en-Provence
+                </p>
+                <p class="subtitle">
+                  During my first two years of engineering studies at one of
+                  France's top engineering schools, I deepened my knowledge
+                  and skills in engineering, and sucessfully completed the
+                  general program at Arts et Métiers.
+                </p>
+                <hr />
+                <h6 class="title text-danger">2020 - 2022</h6>
+                <p>
+                  <a href="https://ptsimarseille.fr"
+                    >PREPA PTSI/PT* At Lycée JEAN-PERRIN</a
+                  >
+                  - Marseille
+                </p>
+                <p class="subtitle">
+                  During my first year in the preparatory class for engineering
+                  schools (PREPA Technology and Engineering Science - PTSI), I
+                  focused on foundational engineering sciences. In my second
+                  year (PREPA Technology Etoile - PT*), I prepared intensively
+                  for competitive exams to enter French top engineering schools.
+                </p>
+                <hr />
+                <h6 class="title text-danger">2019 - 2020</h6>
+                <p>Final year of High School - JEAN-PERRIN Marseille</p>
+                <p class="subtitle">
+                  In my senior year of high school, I specialized in Engineering
+                  Sciences (Terminale SI) and obtained my Scientific
+                  Baccalaureate (S) with a focus on Mathematics. This program
+                  provided me with a strong foundation in engineering and
+                  mathematical principles, enhancing my problem-solving skills
+                  and analytical thinking.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                <div class="mt-2">
+                  <h4>Internship</h4>
+                  <span class="line"></span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h6 class="title text-danger">July - September 2024</h6>
+                <p>
+                  Internship at
+                  <a href="https://fr.4d.com">4D Logiciel</a>- Rabat, Marocco
+                </p>
+                <p class="subtitle">
+                  During the summer of 2023, I completed a 9 weeks internship at
+                  4D Logiciel to validate my international mobility, where I
+                  developed a marketplace for modules using React and TypeScript
+                  for their Qodly website. Qodly is a platform that facilitates
+                  application development through visual programming, allowing
+                  users to assemble blocks instead of writing code.
+                </p>
+                <hr />
+                <h6 class="title text-danger">Auguste 2023</h6>
+                <p>
+                  Internship at <a href="https://fr.4d.com">Irem</a> - Berre,
+                  France
+                </p>
+                <p class="subtitle">
+                  I completed a 4 weeks internship at IREM as a trinee (stage
+                  ouvrier), where I primarily developed data processing and
+                  database management software. I extensively used Python for
+                  these tasks.
+                </p>
+                <hr />
+                <h6 class="title text-danger">2019</h6>
+                <p>
+                  Internship at
+                  <a href="https://www.cd-concept.com">CD-concept</a> -
+                  Carnoux-En-Provence 13470
+                </p>
+                <p class="subtitle">
+                  I completed an internship at CD-Concept, where I was
+                  responsible for installing the PROGEST, a project management
+                  software on tablets and workstations for Grenoble University
+                  Hospital.
+                </p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <div class="pull-left">
+                  <h4 class="mt-2">Languages</h4>
+                  <span class="line"></span>
+                </div>
+              </div>
+              <div class="card-body pb-2">
+                <h6>French</h6>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    style="width: 100%"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <h6>English</h6>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    style="width: 75%"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                <div class="pull-left">
+                  <h4 class="mt-2">Programming language</h4>
+                  <span class="line"></span>
+                </div>
+              </div>
+              <div class="card-body pb-2">
+                <h6>Python</h6>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    style="width: 95%"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <h6>Carduino</h6>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    style="width: 60%"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <h6>C++</h6>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    style="width: 20%"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <h6>HTML &amp; CSS</h6>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    style="width: 80%"
+                    aria-valuenow="50"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <h6>PHP</h6>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    style="width: 50%"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <h6>TypeScript</h6>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    style="width: 80%"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <h6>React (with TypeScript)</h6>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    style="width: 80%"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <h6>JavaScript</h6>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    style="width: 40%"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <h6>Matlab</h6>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    style="width: 20%"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <div class="pull-left">
+                  <h4 class="mt-2">CAO Software</h4>
+                  <span class="line"></span>
+                </div>
+              </div>
+              <div class="card-body pb-2">
+                <h6>4D exp</h6>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    style="width: 90%"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <h6>Solidworks</h6>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    style="width: 85%"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <h6>Catia</h6>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    style="width: 70%"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <h6>Autodesk</h6>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    style="width: 60%"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <h6>Fusion 360</h6>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    style="width: 50%"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <h6>SolidEdges</h6>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    style="width: 50%"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="service">
+      <div class="container">
+        <h2 class="mb-5 pb-4"><span class="text-danger">My</span> Services</h2>
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <div class="card mb-5">
+              <div class="card-header has-icon">
+                <i class="ti-vector text-danger" aria-hidden="true"></i>
+              </div>
+              <div class="card-body px-4 py-3">
+                <h5 class="mb-3 card-title text-dark">Ullam</h5>
+                <p class="subtitle">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ullam commodi provident, dolores reiciendis enim pariatur
+                  error optio, tempora ex, nihil nesciunt! In praesentium sunt
+                  commodi, unde ipsam ex veritatis laboriosam dolor asperiores
+                  suscipit blanditiis, dignissimos quos nesciunt nulla aperiam
+                  officia.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="card mb-5">
+              <div class="card-header has-icon">
+                <i class="ti-write text-danger" aria-hidden="true"></i>
+              </div>
+              <div class="card-body px-4 py-3">
+                <h5 class="mb-3 card-title text-dark">Asperiores</h5>
+                <p class="subtitle">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ullam commodi provident, dolores reiciendis enim pariatur
+                  error optio, tempora ex, nihil nesciunt! In praesentium sunt
+                  commodi, unde ipsam ex veritatis laboriosam dolor asperiores
+                  suscipit blanditiis, dignissimos quos nesciunt nulla aperiam
+                  officia.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="card mb-5">
+              <div class="card-header has-icon">
+                <i class="ti-package text-danger" aria-hidden="true"></i>
+              </div>
+              <div class="card-body px-4 py-3">
+                <h5 class="mb-3 card-title text-dark">Tempora</h5>
+                <p class="subtitle">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ullam commodi provident, dolores reiciendis enim pariatur
+                  error optio, tempora ex, nihil nesciunt! In praesentium sunt
+                  commodi, unde ipsam ex veritatis laboriosam dolor asperiores
+                  suscipit blanditiis, dignissimos quos nesciunt nulla aperiam
+                  officia.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="card mb-5">
+              <div class="card-header has-icon">
+                <i class="ti-map-alt text-danger" aria-hidden="true"></i>
+              </div>
+              <div class="card-body px-4 py-3">
+                <h5 class="mb-3 card-title text-dark">Provident</h5>
+                <p class="subtitle">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ullam commodi provident, dolores reiciendis enim pariatur
+                  error optio, tempora ex, nihil nesciunt! In praesentium sunt
+                  commodi, unde ipsam ex veritatis laboriosam dolor asperiores
+                  suscipit blanditiis, dignissimos quos nesciunt nulla aperiam
+                  officia.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="card mb-5">
+              <div class="card-header has-icon">
+                <i class="ti-bar-chart text-danger" aria-hidden="true"></i>
+              </div>
+              <div class="card-body px-4 py-3">
+                <h5 class="mb-3 card-title text-dark">Consectetur</h5>
+                <p class="subtitle">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ullam commodi provident, dolores reiciendis enim pariatur
+                  error optio, tempora ex, nihil nesciunt! In praesentium sunt
+                  commodi, unde ipsam ex veritatis laboriosam dolor asperiores
+                  suscipit blanditiis, dignissimos quos nesciunt nulla aperiam
+                  officia.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="card mb-5">
+              <div class="card-header has-icon">
+                <i class="ti-support text-danger" aria-hidden="true"></i>
+              </div>
+              <div class="card-body px-4 py-3">
+                <h5 class="mb-3 card-title text-dark">Veritatis</h5>
+                <p class="subtitle">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ullam commodi provident, dolores reiciendis enim pariatur
+                  error optio, tempora ex, nihil nesciunt! In praesentium sunt
+                  commodi, unde ipsam ex veritatis laboriosam dolor asperiores
+                  suscipit blanditiis, dignissimos quos nesciunt nulla aperiam
+                  officia.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section bg-dark py-5">
+      <div class="container text-center">
+        <h2 class="text-light mb-5 font-weight-normal">
+          I Am Available For FreeLance
+        </h2>
+        <a href="#contact" class="btn bg-primary w-lg">Hire me</a>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section bg-custom-gray" id="portfolio">
+      <div class="container">
+        <h1 class="mb-5"><span class="text-danger">My</span> Portfolio</h1>
+        <div class="portfolio">
+          <div class="filters">
+            <a href="#" data-filter=".new" class="active"> New </a>
+            <a href="#" data-filter=".web"> Web dev </a>
+            <a href="#" data-filter=".software"> Software </a>
+            <a href="#" data-filter=".elec"> embedded electronics </a>
+            <a href="#" data-filter=".CAO"> CAO </a>
+          </div>
+          <div id="ItemParent"></div>
+        </div>
+      </div>
+    </section>
+    <!-- End of portfolio section -->
+
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="mb-5">My <span class="text-danger">Projects</span></h2>
+        <div class="row">
+          <div class="blog-card" id="qodly">
+            <div class="img-holder">
+              <img
+                src="assets/imgs/Qodly.jpg"
+                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+              />
+            </div>
+            <div class="content-holder" id="qodly">
+              <h6 class="title">MarketPlace for Qodly</h6>
+
+              <p class="post-details">
+                <a class="text-primary">Tech used:</a>
+                <a class="">TypeScript</a>
+                <a class="">React</a>
+                <a class="">tRPC</a>
+                <a class="">MongoDB</a>
+                <a class="">TailwindCSS</a>
+                <a class="">VSCode</a>
+              </p>
+
+              <p>
+                To fulfill the two-month international requirement of my
+                engineering curriculum, I completed an internship in Morocco at
+                4 Logiciel, the company behind Qodly, a block-based programming
+                software. During this internship, I developed a marketplace
+                website for managing modules and plugins for Qodly.
+              </p>
+
+              <p>
+                <b
+                  >Through this project, I learned to program in TypeScript and
+                  used React with Vite to design the front-end. I also used the
+                  Express framework combined with tRPC to develop the backend
+                  API. For the database, I worked with MongoDB.</b
+                >
+              </p>
+              <p>
+                I greatly appreciated this project as it allowed me to fully
+                immerse myself in a software development company and gain a deep
+                understanding of website creation and design. I discovered a new
+                language, TypeScript, and enhanced my skills in React. I also
+                learned a lot about managing requests between the front-end and
+                back-end.
+              </p>
+            </div>
+          </div>
+          <!-- end of blog wrapper -->
+
+          <!-- blog-card -->
+          <div class="blog-card" id="borne">
+            <div class="img-holder">
+              <img
+                src="assets/imgs/Borne.jpg"
+                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+              />
+            </div>
+            <div class="content-holder">
+              <h6 class="title">Cashless card top-up station</h6>
+
+              <p class="post-details">
+                <a class="text-primary">Tech used:</a>
+                <a class="">Python</a>
+                <a class="">Raspberry Pi</a>
+                <a class="">tKinter</a>
+                <a class="">phpMyAdmin</a>
+                <a class="">Lydia API</a>
+                <a class="">GitHub</a>
+                <a class="">mutliple Input-Device</a>
+              </p>
+
+              <p>
+                As part of a student project competition at my school, Arts et
+                Métiers, we came up with the idea to design an automatic
+                CASH-LESS payment card recharge station for our galas. These
+                events, which typically attract over 5000 attendees, often face
+                congestion issues at the recharge counters. This solution would
+                enable quick card recharges using Lydia.
+              </p>
+
+              <p>
+                <b
+                  >To achieve this, we used a Raspberry Pi 4 with input devices
+                  including a QR code scanner, a numeric keypad, and an RFID
+                  card reader. We developed a software application in Python
+                  using the Tkinter library for the graphical interface, along
+                  with communication with the database via phpMyAdmin to record
+                  payment amounts on the cards. Lydia’s API was utilized to
+                  process transactions.</b
+                >
+              </p>
+              <p>
+                <b
+                  >This station was eventually tested at a gala, generating
+                  €6000 out of the event's total K€40 in revenue.</b
+                >
+              </p>
+              <p>
+                The project team consisted of 6 members: 3 focused on the design
+                and construction of the station, and 3 others, including myself,
+                worked on the software and electronics. We collaborated on the
+                code using GitHub to streamline teamwork.
+              </p>
+            </div>
+          </div>
+          <!-- end of blog wrapper -->
+
+          <!-- blog-card -->
+          <div class="blog-card" id="site">
+            <div class="img-holder">
+              <img
+                src="assets/imgs/Site.jpg"
+                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+              />
+            </div>
+            <div class="content-holder">
+              <h4 class="title">This site</h4>
+
+              <p class="post-details">
+                <a class="text-primary">Tech used:</a>
+                <a class="">HTML</a>
+                <a class="">JavaScript</a>
+              </p>
+
+              <p>
+                While writing my CV, I was disappointed not to be able to
+                include some of my projects or important details due to lack of
+                space. So, I came up with the idea to create this website to
+                showcase all my projects, allowing recruiters to gain a
+                comprehensive understanding of my work.
+              </p>
+
+              <p>
+                <b
+                  >I developed this site using HTML and JavaScript, starting
+                  with a template that I customized to suit my needs. The site
+                  incorporates several tools, including the Bootstrap framework
+                  for design and the Leaflet API, a free alternative to Google
+                  Maps, which powers the map at the bottom of the page.</b
+                >
+              </p>
+              <p>
+                I plan to improve the site as I gain more knowledge and skills.
+              </p>
+            </div>
+          </div>
+          <!-- end of blog wrapper -->
+          <!-- blog-card -->
+          <div class="blog-card" id="vote">
+            <div class="img-holder">
+              <img
+                src="assets/imgs/vote.jpg"
+                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+              />
+            </div>
+            <div class="content-holder">
+              <h4 class="title">A voting machine</h4>
+
+              <p class="post-details">
+                <a class="text-primary">Tech used:</a>
+                <a class="">Python</a>
+                <a class="">tKinter</a>
+                <a class="">Raspberry Pi</a>
+                <a class="">Screens device</a>
+              </p>
+              <p>
+                As a member of the computer club at the Arts et Métiers school,
+                I was tasked with designing a voting machine to enable the
+                entire class to participate in important decisions, such as
+                electing members of key clubs like the student council (BDE). My
+                goal was to create a user-friendly solution that could be easily
+                utilized by future cohorts.
+              </p>
+
+              <p>
+                <b
+                  >For this project, I used a Raspberry Pi 4 equipped with two
+                  touchscreens: one for the voters and another for vote control.
+                  The software was developed in Python using the Tkinter library
+                  to create an accessible user interface. To simplify the setup,
+                  such as managing the list of voters, the database was handled
+                  in Excel.</b
+                >
+              </p>
+              <p>
+                This project was completed in collaboration with another student
+                who was responsible for building the machine's stand.
+              </p>
+            </div>
+          </div>
+          <!-- end of blog wrapper -->
+
+          <!-- blog-card -->
+          <div class="blog-card" id="kavita">
+            <div class="img-holder">
+              <img
+                src="assets/imgs/blog1.jpg"
+                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+              />
+            </div>
+            <div class="content-holder">
+              <h4 class="title">A book reader in Intranet Kavita</h4>
+
+              <p class="post-details">
+                <a class="text-primary">Tech used:</a>
+                <a class="">Proxmox</a>
+                <a class="">Kavita</a>
+                <a class="">Linux</a>
+                <a class="">Synology</a>
+              </p>
+              <p>
+                As a member of the Arts et Métiers computer club, I was
+                approached by the president of the library club to set up an
+                intranet-based reading site within the residence network.
+              </p>
+
+              <p>
+                <b
+                  >To achieve this, I created a Debian virtual machine (VM) and
+                  installed Kavita, an open-source digital library management
+                  software. I then connected the VM to a shared folder on our
+                  Synology NAS to store and manage our online library of books.
+                </b>
+              </p>
+            </div>
+          </div>
+          <!-- end of blog wrapper -->
+          <!-- blog-card -->
+          <div class="blog-card" id="rent">
+            <div class="img-holder">
+              <img
+                src="assets/imgs/Rent.jpg"
+                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+              />
+            </div>
+            <div class="content-holder">
+              <h4 class="title">Car rental site</h4>
+
+              <p class="post-details">
+                <a class="text-primary">Tech used:</a>
+                <a class="">HTML</a>
+                <a class="">PHP</a>
+                <a class="">PHPmyAdmin</a>
+                <a class="">OVH</a>
+              </p>
+
+              <p>
+                During another inter-student competition at the Arts et Métiers
+                school, we came up with the idea to develop a car rental website
+                for a client looking to enter this market.
+              </p>
+
+              <p>
+                <b
+                  >To complete this project, we primarily used HTML and PHP for
+                  the front-end. The database was set up using PhpMyAdmin, and
+                  the site was hosted on OVH.</b
+                >
+              </p>
+              <p>
+                This project was carried out by a team of six students,
+                including myself. I was mainly responsible for the customer
+                portal section. To collaborate on the code, we used GitHub.
+              </p>
+            </div>
+          </div>
+          <!-- end of blog wrapper -->
+          <!-- blog-card -->
+          <div class="blog-card">
+            <div class="img-holder">
+              <img
+                src="assets/imgs/Rezal.png"
+                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+              />
+            </div>
+            <div class="content-holder">
+              <h4 class="title">
+                Member of the Arts et Métiers computer club Rezal
+              </h4>
+
+              <p class="post-details">
+                <a class="text-primary">Tech used:</a>
+                <a class="">Proxmox</a>
+                <a class="">Pfsense</a>
+                <a class="">PHPmyAdmin</a>
+                <a class="">Intranet server</a>
+                <a class="">Synology</a>
+                <a class="">Ubiquiti</a>
+              </p>
+
+              <p>
+                As the accountant and fund manager of the computer club, I took
+                on various responsibilities that contributed to the social life
+                of the school. My primary role was to maintain the network
+                infrastructure of the student residence, ensuring stable
+                internet access for all residents. I managed the residence's
+                servers, administered tools like the pfsense firewall and
+                Synology NAS, and maintained Ubiquiti access points to optimize
+                network coverage.
+              </p>
+
+              <p>
+                <b
+                  >I was also involved in managing intranet systems, including
+                  Proxmox for virtual machine management, which hosted services
+                  like Plex, an internal streaming system. Additionally, I
+                  maintained the cafeteria’s payment system, developed by former
+                  students, which utilized PhpMyAdmin for the database and
+                  payment terminals built on Raspberry Pi.</b
+                >
+              </p>
+
+              <p>
+                <b
+                  >Another significant aspect of my responsibilities was setting
+                  up and managing the payment system for the school’s galas,
+                  which hosted up to 5000 people and handled transactions
+                  reaching €40,000.</b
+                >
+              </p>
+
+              <p>
+                In addition to these maintenance tasks, I contributed to several
+                projects, such as the automated terminal linked to the gala
+                payment system, a voting machine, and the creation of Kavita.
+              </p>
+            </div>
+          </div>
+          <!-- end of blog wrapper -->
+          <!-- blog-card -->
+          <div class="blog-card">
+            <div class="img-holder">
+              <img
+                src="assets/imgs/em.jpg"
+                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+              />
+            </div>
+            <div class="content-holder">
+              <h4 class="title">
+                Member of the Arts et Métiers musique club Em'ss
+              </h4>
+
+              <p class="post-details">
+                <a class="text-primary">Tech used:</a>
+                <a class="">Proxmox</a>
+                <a class="">Pfsense</a>
+                <a class="">PHPmyAdmin</a>
+                <a class="">Intranet server</a>
+                <a class="">Synology</a>
+                <a class="">Ubiquiti</a>
+              </p>
+
+              <p>
+                In addition to computing, CAD, and embedded electronics, I have
+                another passion: music. I was a member of the music club at Arts
+                et Métiers, where I served as a sound engineer during galas.
+              </p>
+
+              <p>
+                <b
+                  >The role of a music club member includes setting up music
+                  stages, whether for jams in the cafeteria or a large stage
+                  during our galas. As a sound engineer, I adjusted the sound
+                  using a Soundcraft Si Expression 3 mixing console, both during
+                  rehearsals and live concerts.</b
+                >
+              </p>
+
+              <p>
+                I have also performed on stage multiple times as a guitarist and
+                bassist. Now that I am no longer a member of the club, I hope to
+                form a band with friends.
+              </p>
+            </div>
+          </div>
+          <!-- end of blog wrapper -->
+          <!-- blog-card -->
+          <div class="blog-card" id="reveil">
+            <div class="img-holder">
+              <img
+                src="assets/imgs/Reveil.png"
+                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+              />
+            </div>
+            <div class="content-holder">
+              <h4 class="title">Optimized alarm clock</h4>
+
+              <p class="post-details">
+                <a class="text-primary">Tech used:</a>
+                <a class="">Python</a>
+                <a class="">Carduino</a>
+                <a class="">PySerial</a>
+                <a class="">mutliple Input-Device</a>
+              </p>
+              <p>
+                For my final year project in preparatory class at Lycée
+                Jean-Perrin, which needed to focus on health and prevention, I
+                teamed up with another student to explore the topic of sleep and
+                wake-up optimization. We designed a prototype of an optimized
+                alarm clock that wakes a person during their light sleep phase,
+                making the wake-up process easier.
+              </p>
+
+              <p>
+                <b
+                  >To build this alarm clock, I used an Arduino Uno board, along
+                  with various components such as an LCD screen, a joystick, and
+                  an accelerometer to analyze the sleeper's movements during the
+                  night. I also experimented with a heart rate sensor, but
+                  ultimately decided not to use it due to its lack of accuracy.
+                  The Arduino board was programmed in Arduino C to send data via
+                  a serial port. Simultaneously, a Python program, using the
+                  PySerial library, retrieved this data, processed it, and sent
+                  back the optimal wake-up time to the Arduino board.</b
+                >
+              </p>
+            </div>
+          </div>
+          <!-- end of blog wrapper -->
+          <!-- blog-card -->
+          <div class="blog-card" id="reveil">
+            <div class="img-holder">
+              <img
+                src="assets/imgs/Reveil.png"
+                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+              />
+            </div>
+            <div class="content-holder">
+              <h4 class="title">Optimized alarm clock</h4>
+
+              <p class="post-details">
+                <a class="text-primary">Tech used:</a>
+                <a class="">Python</a>
+                <a class="">Carduino</a>
+                <a class="">PySerial</a>
+                <a class="">mutliple Input-Device</a>
+              </p>
+              <p>
+                For my final year project in preparatory class at Lycée
+                Jean-Perrin, which needed to focus on health and prevention, I
+                teamed up with another student to explore the topic of sleep and
+                wake-up optimization. We designed a prototype of an optimized
+                alarm clock that wakes a person during their light sleep phase,
+                making the wake-up process easier.
+              </p>
+
+              <p>
+                <b
+                  >To build this alarm clock, I used an Arduino Uno board, along
+                  with various components such as an LCD screen, a joystick, and
+                  an accelerometer to analyze the sleeper's movements during the
+                  night. I also experimented with a heart rate sensor, but
+                  ultimately decided not to use it due to its lack of accuracy.
+                  The Arduino board was programmed in Arduino C to send data via
+                  a serial port. Simultaneously, a Python program, using the
+                  PySerial library, retrieved this data, processed it, and sent
+                  back the optimal wake-up time to the Arduino board.</b
+                >
+              </p>
+            </div>
+          </div>
+          <!-- end of blog wrapper -->
+          <!-- blog-card -->
+          <div class="blog-card" id="irem">
+            <div class="img-holder">
+              <img
+                src="assets/imgs/blog1.jpg"
+                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+              />
+            </div>
+            <div class="content-holder">
+              <h4 class="title">Accounting and quotation software</h4>
+
+              <p class="post-details">
+                <a class="text-primary">Tech used:</a>
+                <a class="">Python</a>
+                <a class="">tKinter</a>
+              </p>
+
+              <p>
+                During my internship at IREM, a company specializing in welding
+                and piping installation in petrochemical plants such as Total, I
+                had the opportunity to develop several support software for
+                quotes and pricing.
+              </p>
+
+              <p>
+                The first software I developed, based on LIEBHERR crane load
+                charts, helped determine the most cost-effective crane to use
+                based on factors like lifting height, pipe weight, and rental
+                cost. I then created a website using other normative charts,
+                which assigns a hazard rating to a pipe based on its size, the
+                hazardous nature of the liquid it carries, pressure, and other
+                criteria. Finally, I developed a third software that, using
+                Excel data, optimizes the identification of mandatory welding
+                tests.
+              </p>
+
+              <p>
+                <b
+                  >For all these software projects, I primarily used Python with
+                  the Tkinter library.</b
+                >
+              </p>
+            </div>
+          </div>
+          <!-- end of blog wrapper -->
+          <!-- blog-card -->
+          <div class="blog-card" id="valise">
+            <div class="img-holder">
+              <img
+                src="assets/imgs/blog1.jpg"
+                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+              />
+            </div>
+            <div class="content-holder">
+              <h4 class="title">smart follow suitcase</h4>
+
+              <p class="post-details">
+                <a class="text-primary">Tech used:</a>
+                <a class="">Carduino</a>
+                <a class="">Bluetooth sensor</a>
+              </p>
+              <p>
+                For our final year high school project, focusing on health and
+                assistance, we decided to design a remote-controlled suitcase
+                that would follow its user by tracking their phone's Bluetooth
+                signal through triangulation.
+              </p>
+
+              <p>
+                <b>
+                  To achieve this, we used an Arduino board connected to a
+                  shield initially designed for Raspberry Pi and powered by a
+                  battery. The system was equipped with a Bluetooth sensor to
+                  detect the user's position and beacons for position
+                  triangulation to track the user.</b
+                >
+              </p>
+
+              <p>
+                This project caught the attention of our teacher, who registered
+                us for a final year project competition. Unfortunately, we were
+                unable to participate in the competition due to the Covid-19
+                pandemic.
+              </p>
+            </div>
+          </div>
+          <!-- end of blog wrapper -->
+          <!-- blog-card -->
+          <div class="blog-card" id="cao">
+            <div class="img-holder">
+              <img
+                src="assets/imgs/CAO/CAO.png"
+                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+              />
+            </div>
+            <div class="content-holder">
+              <h4 class="title">Some design in SolidWorks</h4>
+
+              <p class="post-details">
+                <a class="text-primary">Tech used:</a>
+                <a class="">Soldiworks</a>
+              </p>
+
+              <p>
+                Having learned to design 3D models in SolidWorks during high
+                school, I developed a passion for creating a variety of 3D
+                models. I often create swords inspired by pop culture, as well
+                as designs that I have entirely conceptualized myself.
+              </p>
+            </div>
+          </div>
+          <!-- end of blog wrapper -->
+        </div>
+      </div>
+    </section>
+
+    <div class="section contact" id="contact">
+      <div id="map" class="map"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="contact-form-card">
+              <h4 class="contact-title">Send a message</h4>
+              <form action="">
+                <div class="form-group">
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Name *"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    class="form-control"
+                    type="email"
+                    placeholder="Email *"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <textarea
+                    class="form-control"
+                    id=""
+                    placeholder="Message"
+                    rows="7"
+                    required
+                  ></textarea>
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="form-control btn btn-primary">
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="contact-info-card">
+              <h4 class="contact-title">Get in touch</h4>
+              <div class="row mb-2">
+                <div class="col-1 pt-1 mr-1">
+                  <i class="ti-mobile icon-md"></i>
+                </div>
+                <div class="col-10">
+                  <h6 class="d-inline">
+                    Phone : <br />
+                    <span class="text-muted">+ (33) 766560750</span>
+                  </h6>
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-1 pt-1 mr-1">
+                  <i class="ti-map-alt icon-md"></i>
+                </div>
+                <div class="col-10">
+                  <h6 class="d-inline">
+                    Address :<br />
+                    <span class="text-muted"
+                      >19 Rue du Ricm 13100 Aix-en-Provence</span
+                    >
+                  </h6>
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-1 pt-1 mr-1">
+                  <i class="ti-envelope icon-md"></i>
+                </div>
+                <div class="col-10">
+                  <h6 class="d-inline">
+                    Email :<br />
+                    <span class="text-muted">ylan13180@gmail.com</span>
+                  </h6>
+                </div>
+              </div>
+              <ul class="social-icons pt-4">
+                <li class="social-item">
+                  <a class="social-link text-light" href="#"
+                    ><i class="ti-facebook" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link text-light" href="#"
+                    ><i class="ti-twitter" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link text-light" href="#"
+                    ><i class="ti-google" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link text-light" href="#"
+                    ><i class="ti-instagram" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link text-light" href="#"
+                    ><i class="ti-github" aria-hidden="true"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer py-3">
+      <div class="container">
+        <p class="small mb-0 text-light">
+          &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          Created With <i class="ti-heart text-danger"></i> By
+          <a href="http://devcrud.com" target="_blank"
+            ><span class="text-danger" title="Bootstrap 4 Themes and Dashboards"
+              >DevCRUD</span
+            ></a
+          >
+          and modified by
+          <a href="#home"
+            ><span class="text-danger" title="Bootstrap 4 Themes and Dashboards"
+              >Ylan Benelhadjsaid-Dutrieux</span
+            ></a
+          >
+        </p>
+      </div>
+    </footer>
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Isotope  -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+
+    <!-- Leaflet -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+
+    <!-- JohnDoe js -->
+    <script src="assets/js/johndoe.js"></script>
+  </body>
+</html>
