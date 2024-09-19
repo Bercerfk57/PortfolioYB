@@ -56,7 +56,6 @@ export function generatePortfolioItems(items, language) {
     return portfolioContainer;
   }
 
-  
 
   // Leaf
 export function initMap() {
